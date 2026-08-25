@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Python for AI",
+    "description": "Python programming for machine learning and AI applications.",
+    "level": "intermediate",
+    "prerequisites": {
+      "python": "beginner"
+    },
+    "duration_hours": 30
+  },
+  {
+    "id": 2,
+    "name": "Machine Learning Fundamentals",
+    "description": "Core supervised and unsupervised machine learning concepts.",
+    "level": "intermediate",
+    "prerequisites": {
+      "python": "intermediate",
+      "statistics": "beginner"
+    },
+    "duration_hours": 40
+  },
+  {
+    "id": 3,
+    "name": "Advanced Machine Learning",
+    "description": "Advanced machine learning algorithms and production techniques.",
+    "level": "advanced",
+    "prerequisites": {
+      "python": "advanced",
+      "linear_algebra": "intermediate",
+      "statistics": "intermediate"
+    },
+    "duration_hours": 60
+  },
+  {
+    "id": 4,
+    "name": "LLM Application Development",
+    "description": "Build applications using large language models, APIs, and agentic workflows.",
+    "level": "intermediate",
+    "prerequisites": {
+      "python": "intermediate"
+    },
+    "duration_hours": 35
+  },
+  {
+    "id": 5,
+    "name": "SQL for Data Science",
+    "description": "Query databases and analyze structured data using SQL.",
+    "level": "beginner",
+    "prerequisites": {},
+    "duration_hours": 20
+  }
+]
