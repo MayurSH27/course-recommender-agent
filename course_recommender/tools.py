@@ -58,3 +58,32 @@ def search_courses(
         course
         for _, course in eligible_courses[:limit]
     ]
+
+def check_course_eligibility(
+    student: Student,
+    course_id: int,
+) -> dict:
+
+    from .tools import load_courses
+    from .rules import is_eligible
+
+    courses = load_courses()
+
+    for course in courses:
+        if course.id == course_id:
+
+            eligible = is_eligible(
+                student,
+                course,
+            )
+
+            return {
+                "course_id": course.id,
+                "course_name": course.name,
+                "eligible": eligible,
+                "prerequisites": course.prerequisites,
+            }
+
+    return {
+        "error": f"Course {course_id} not found."
+    }
